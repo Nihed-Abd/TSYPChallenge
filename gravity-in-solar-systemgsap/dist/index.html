@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Gravity in Solar System  - GSAP</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="space"></div>
+<div class="earth" id="cb"></div>
+<div class="ball" id="ball"></div>
+
+<button id="ufo" onclick="releaseBall();">
+  <span class="capsule"></span>
+  <span class="capsule"></span>
+</button>
+
+<div class="cbs">
+  <button id="sun" onclick="goCelestialBody(id);">sun</button>
+  <button id="mercury" onclick="goCelestialBody(id)">mercury</button>
+  <button id="venus" onclick="goCelestialBody(id)">venus</button>
+  <button id="earth" onclick="goCelestialBody(id)" class="info">earth</button>
+  <button id="moon" onclick="goCelestialBody(id)">moon</button>
+  <button id="mars" onclick="goCelestialBody(id)">mars</button>
+  <button id="jupiter" onclick="goCelestialBody(id)">jupiter</button>
+  <button id="saturn" onclick="goCelestialBody(id)">saturn</button>
+  <button id="uranus" onclick="goCelestialBody(id)">uranus</button>
+  <button id="neptune" onclick="goCelestialBody(id)">neptune</button>
+  <button id="pluto" onclick="goCelestialBody(id)">pluto</button>
+</div>
+<!-- partial -->
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CustomEase3.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrambleTextPlugin3.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CustomBounce3.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CustomWiggle3.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/InertiaPlugin.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Draggable3.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/EasePack3.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Flip.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

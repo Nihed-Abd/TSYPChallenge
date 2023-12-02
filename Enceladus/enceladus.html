@@ -1,0 +1,84 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebGL Tour of the Solar System: Mars</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #button-container {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+    }
+
+    .css-button {
+      margin-bottom: 10px;
+      /* Adjust margin as needed */
+    }
+
+    #marsloc {
+      cursor: -webkit-grab;
+      cursor: grab;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <div id="marsloc"></div>
+  <article id="marsinfo">
+    <h1></h1>
+    <div>
+      <p>Home to both the Solar System's highest mountain <i>(Olympus Mons)</i>, and deepest canyon <i>(Valles Marineris)</i>, Mars is also the planet most likely to support life outside of Earth; seasonal methane plumes observed over several decades have yet to be explained.
+    </div>
+
+  </article>
+
+  <div id="button-container">
+    <div class="css-button">
+      <p class="css-button-text">ABOUT</p>
+      <div class="css-button-inner">
+        <div class="reset-skew">
+          <p class="css-button-inner-text">ABOUT</p>
+        </div>
+      </div>
+    </div>
+    <div class="css-button">
+      <p class="css-button-text">GRAVITY TEST</p>
+      <div class="css-button-inner">
+        <div class="reset-skew">
+          <p class="css-button-inner-text">GRAVITY TEST</p>
+        </div>
+      </div>
+    </div>
+    <div class="css-button">
+      <p class="css-button-text">ROVER</p>
+      <div class="css-button-inner">
+        <div class="reset-skew">
+          <p class="css-button-inner-text">ROVER</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js'></script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/orbitcontrols.js'></script>
+  <script src="script.js"></script>
+</body>
+</html>
